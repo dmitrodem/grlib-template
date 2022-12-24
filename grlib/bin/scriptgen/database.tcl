@@ -387,7 +387,7 @@ foreach tool $tools {
     switch $tool {
         "actel" - "aldec" - "altera" - "cdns" - "ghdl" -
         "lattice" - "mentor" - "microsemi" - "snps" - "nanoxplore" -
-        "xlnx" {
+        "xlnx" - "lsp" {
             if { [ file exists "$GRLIB/bin/scriptgen/filebuild/$tool.tcl" ] } {
                 source "$GRLIB/bin/scriptgen/filebuild/$tool.tcl"
             }
